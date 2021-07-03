@@ -122,10 +122,11 @@ a {
   border: 1px rgb(189, 96, 129);
   border-style:dashed;
   width: 60vmin;
-  height: 40vmin;
+  height: inherit;
   text-align: center;
   padding: 2vmin;
   font-size: 3vmin;
+  padding-bottom: 4vmin;
 }
 
 #title{
@@ -170,20 +171,21 @@ h1{
 .field{
   display: flex;
   flex-direction: row;
-  width: 50vmin;
+  width: 60vmin;
   margin: 2vmin;
 }
 
 .form-label {
   width: 15vmin;
-  margin-left: 3vmin
+  margin-left: 2vmin
 }
 
 #playlist_song_title, #playlist_artist, #playlist_album{
   border: 1px dashed black;
   background-color: rgb(204, 83, 126);
-  width: 25vmin;
-  height: 4vmin
+  width: 40vmin;
+  height: 5vmin;
+  font-size: 2vmin
 }
 
 input[type="submit" i]{
@@ -206,8 +208,9 @@ input[type="submit" i]{
 }
 
 
-// #notice {
-//   color: green; }
+#notice {
+ color: rgb(204, 83, 126); 
+}
 
 // .field_with_errors {
 //   padding: 2px;
