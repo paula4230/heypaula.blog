@@ -12,21 +12,33 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :song_title %>
-    <%= form.text_field :song_title %>
+    <p class="form-label">
+      <%= form.label :song_title %>
+    </p>
+    <p class="input">
+      <%= form.text_field :song_title %>
+    </p>
   </div>
 
   <div class="field">
-    <%= form.label :artist %>
-    <%= form.text_area :artist %>
+    <p class="form-label">
+      <%= form.label :artist %>
+    </p>
+    <%= form.text_field :artist %>
   </div>
 
   <div class="field">
-    <%= form.label :album %>
-    <%= form.text_area :album %>
+    <p class="form-label">
+      <%= form.label :album %>
+    </p>
+    <%= form.text_field :album %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <div id="action-container">
+      <%= form.submit %>
+    </div>
   </div>
 <% end %>
+
+

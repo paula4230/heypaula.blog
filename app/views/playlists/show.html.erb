@@ -1,18 +1,36 @@
-<p>
-  <strong>Song title:</strong>
-  <%= @playlist.song_title %>
-</p>
+<div class='track-details'>
+  <div class='info'>
+    <div id= 'title'>
+      <%= @playlist.song_title %>
+    </div>
 
-<p>
-  <strong>Artist:</strong>
-  <%= @playlist.artist %>
-</p>
+    <div id= 'artist'>
+      <%= @playlist.artist %>
+    </div>
 
-<p>
-  <strong>Album:</strong>
-  <%= @playlist.album %>
-</p>
+    <div id= 'album'>
+      <%= @playlist.album %>
+    </div>
 
-<%= link_to 'Destroy', @playlist, method: :delete, data: { confirm: 'Are you sure?' } %> |
-<%= link_to 'Edit', edit_playlist_path(@playlist) %> |
-<%= link_to 'Back', playlists_path %>
+    <div class='track-controls'>
+      <p id='delete-track'>
+        <%= link_to 'Delete', @playlist, method: :delete, data: { confirm: 'Are you sure?' } %> 
+      </p> 
+      <p id='edit-track'>
+        <%= link_to 'Edit', edit_playlist_path(@playlist) %>
+      </p>       
+    </div>
+
+    <div class='page-controls'>
+      <div id='back'>
+        <%= link_to '| Back |', playlists_path %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+

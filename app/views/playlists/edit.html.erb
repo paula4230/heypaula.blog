@@ -1,6 +1,16 @@
-<h1>Editing Playlist</h1>
+<div class= 'edit-form'>
+    <h1>Enter Changes</h1>
 
-<%= render 'form', playlist: @playlist %>
+    <div class= 'track-form'>
+    <%= render 'form', playlist: @playlist %>
+    </div>
 
-<%= link_to 'Show', @playlist %> |
-<%= link_to 'Back', playlists_path %>
+    <div class='page-controls'>
+      <div id='back'>
+        <%= link_to 'Cancel Edit', @playlist %> |
+        <%= link_to 'Back to Playlist', playlists_path %>
+      </div>
+    </div>
+
+    
+</div>
