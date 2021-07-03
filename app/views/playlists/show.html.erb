@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+
 
 <p>
   <strong>Song title:</strong>
@@ -15,5 +15,6 @@
   <%= @playlist.album %>
 </p>
 
+<%= link_to 'Destroy', @playlist, method: :delete, data: { confirm: 'Are you sure?' } %> |
 <%= link_to 'Edit', edit_playlist_path(@playlist) %> |
 <%= link_to 'Back', playlists_path %>

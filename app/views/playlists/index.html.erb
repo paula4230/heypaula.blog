@@ -13,12 +13,9 @@
   <tbody>
     <% @playlists.each do |playlist| %>
       <tr>
-        <td><%= playlist.song_title %></td>
+        <td><%= link_to playlist.song_title, playlist%></td>
         <td><%= playlist.artist %></td>
         <td><%= playlist.album %></td>
-        <td><%= link_to 'Show', playlist %></td>
-        <td><%= link_to 'Edit', edit_playlist_path(playlist) %></td>
-        <td><%= link_to 'Destroy', playlist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +23,4 @@
 
 <br>
 
-<%= link_to 'New Track', new_playlist_path %>
+<%= link_to 'Add Track', new_playlist_path %>
